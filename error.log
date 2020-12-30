@@ -1,0 +1,130 @@
+2019-08-02 08:20:51.134466> System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at http://bi-nav03.intraweb.bimco.dk:8247/ServicesNAV110/WS/Informatique/Page/EmailIndexList that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.148.33.30:8247
+                            at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+                            at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+                            --- End of inner exception stack trace ---
+                            at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+                            at System.Net.HttpWebRequest.GetRequestStream()
+                            at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+                            --- End of inner exception stack trace ---
+                            Server stack trace:
+                            at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+                            at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+                            at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+                            at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+                            at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+                            Exception rethrown at [0]:
+                            at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+                            at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_Port.ReadMultiple(ReadMultiple request)
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_PortClient.BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_Port.ReadMultiple(ReadMultiple request) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Service References\navpage_emailindex\Reference.cs:line 746
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_PortClient.ReadMultiple(EmailIndexList_Filter[] filter, String bookmarkKey, Int32 setSize) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Service References\navpage_emailindex\Reference.cs:line 754
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.get_extended_contact_info(OutlookContact candidate_contact) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 145
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.match_outlook_contact_detailed(OutlookContact candidate_contact) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 350
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.match_outlook_contacts_detailed(BackgroundWorker& worker, List`1 candidate_contacts) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 119
+2019-08-02 08:22:04.316497> System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at http://bi-nav03.intraweb.bimco.dk:8247/ServicesNAV110/WS/Informatique/Page/EmailIndexList that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.148.33.30:8247
+                            at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+                            at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+                            --- End of inner exception stack trace ---
+                            at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+                            at System.Net.HttpWebRequest.GetRequestStream()
+                            at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+                            --- End of inner exception stack trace ---
+                            Server stack trace:
+                            at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+                            at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+                            at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+                            at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+                            at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+                            Exception rethrown at [0]:
+                            at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+                            at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_Port.ReadMultiple(ReadMultiple request)
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_PortClient.BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_Port.ReadMultiple(ReadMultiple request) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Service References\navpage_emailindex\Reference.cs:line 746
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_PortClient.ReadMultiple(EmailIndexList_Filter[] filter, String bookmarkKey, Int32 setSize) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Service References\navpage_emailindex\Reference.cs:line 754
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.get_extended_contact_info(OutlookContact candidate_contact) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 145
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.match_outlook_contact_detailed(OutlookContact candidate_contact) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 350
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.match_outlook_contacts_detailed(BackgroundWorker& worker, List`1 candidate_contacts) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 119
+2019-08-02 08:22:25.337359> System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at http://bi-nav03.intraweb.bimco.dk:8247/ServicesNAV110/WS/Informatique/Page/EmailIndexList that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.148.33.30:8247
+                            at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+                            at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+                            --- End of inner exception stack trace ---
+                            at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+                            at System.Net.HttpWebRequest.GetRequestStream()
+                            at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+                            --- End of inner exception stack trace ---
+                            Server stack trace:
+                            at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+                            at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+                            at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+                            at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+                            at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+                            Exception rethrown at [0]:
+                            at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+                            at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_Port.ReadMultiple(ReadMultiple request)
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_PortClient.BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_Port.ReadMultiple(ReadMultiple request) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Service References\navpage_emailindex\Reference.cs:line 746
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_PortClient.ReadMultiple(EmailIndexList_Filter[] filter, String bookmarkKey, Int32 setSize) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Service References\navpage_emailindex\Reference.cs:line 754
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.get_extended_contact_info(OutlookContact candidate_contact) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 145
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.match_outlook_contact_detailed(OutlookContact candidate_contact) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 350
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.match_outlook_contacts_detailed(BackgroundWorker& worker, List`1 candidate_contacts) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 119
+2019-08-02 08:22:38.338943> System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at http://bi-nav03.intraweb.bimco.dk:8247/ServicesNAV110/WS/Informatique/Page/EmailIndexList that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.148.33.30:8247
+                            at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+                            at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+                            --- End of inner exception stack trace ---
+                            at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+                            at System.Net.HttpWebRequest.GetRequestStream()
+                            at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+                            --- End of inner exception stack trace ---
+                            Server stack trace:
+                            at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+                            at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+                            at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+                            at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+                            at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+                            Exception rethrown at [0]:
+                            at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+                            at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_Port.ReadMultiple(ReadMultiple request)
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_PortClient.BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_Port.ReadMultiple(ReadMultiple request) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Service References\navpage_emailindex\Reference.cs:line 746
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_PortClient.ReadMultiple(EmailIndexList_Filter[] filter, String bookmarkKey, Int32 setSize) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Service References\navpage_emailindex\Reference.cs:line 754
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.get_extended_contact_info(OutlookContact candidate_contact) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 145
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.match_outlook_contact_detailed(OutlookContact candidate_contact) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 350
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.match_outlook_contacts_detailed(BackgroundWorker& worker, List`1 candidate_contacts) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 119
+2019-08-02 09:08:18.351572> System.ServiceModel.EndpointNotFoundException: There was no endpoint listening at http://bi-nav03.intraweb.bimco.dk:8247/ServicesNAV110/WS/Informatique/Page/EmailIndexList that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details. ---> System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.148.33.30:8247
+                            at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+                            at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+                            --- End of inner exception stack trace ---
+                            at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+                            at System.Net.HttpWebRequest.GetRequestStream()
+                            at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+                            --- End of inner exception stack trace ---
+                            Server stack trace:
+                            at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+                            at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+                            at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+                            at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+                            at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+                            at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+                            Exception rethrown at [0]:
+                            at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+                            at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_Port.ReadMultiple(ReadMultiple request)
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_PortClient.BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_Port.ReadMultiple(ReadMultiple request) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Service References\navpage_emailindex\Reference.cs:line 746
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.navpage_emailindex.EmailIndexList_PortClient.ReadMultiple(EmailIndexList_Filter[] filter, String bookmarkKey, Int32 setSize) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Service References\navpage_emailindex\Reference.cs:line 754
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.get_extended_contact_info(OutlookContact candidate_contact) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 145
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.match_outlook_contact_detailed(OutlookContact candidate_contact) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 350
+                            at BIMCO.Office2013Addins.OutlookSharepointIntegration.Utilities.OutlookNavisionMatcher.match_outlook_contacts_detailed(BackgroundWorker& worker, List`1 candidate_contacts) in C:\Users\KKS\OneDrive - BIMCO\Projects\GitHub\BIMCO.Internal.Development\Addins\Outlook Addin\Utilities\OutlookNavisionMatcher.cs:line 119
